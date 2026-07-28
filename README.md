@@ -1,63 +1,52 @@
-# 🌟 Gold Trading & Backtesting Toolkit (XAU/USD)
+# 🌟 🔱 Gold Trading & Backtesting Toolkit (XAU/USD) 🚀
 
-Welcome! This repository provides a complete, easy-to-use Python toolkit for downloading Gold market data and testing trading strategies automatically. Designed so simply that even a 10th-grade student can run it and put it on GitHub!
-
----
-
-## 📂 What's Inside?
-1. **`data_fetcher.py`**: Automatically downloads multi-timeframe Gold prices (`5m`, `15m`, `1h`, `1d`, `1wk`) for free using Yahoo Finance (`yfinance`).
-2. **`strategies.py`**: Contains the Moving Average Crossover trading strategy.
-3. **`run_backtest.py`**: Runs your strategy on historical gold data and shows you your profit/loss, win rate, and performance stats!
-4. **`requirements.txt`**: List of required python libraries.
+> Professional Python toolkit for downloading institutional **Gold (XAU/USD)** market data, running algorithmic backtests (`backtesting.py`), and analyzing multi-timeframe trading strategies. Engineered by **[Monetry.in](https://monetry.in)**.
 
 ---
 
-## 🚀 Step-by-Step Beginner Guide (GitHub & Local Setup)
+## ✨ What's Inside? 📂
+
+| Component | Description |
+|-----------|-------------|
+| 📥 **`data_fetcher.py`** | Downloads multi-timeframe Gold prices (`5m`, `15m`, `1h`, `1d`, `1wk`) via Yahoo Finance (`GC=F`). |
+| 🔑 **`goldapi_fetcher.py`** | Fetches live historical spot prices directly via GoldAPI.io (`goldapi-b349ad8284f99bb826d49464d3bfba50-io`). |
+| 📊 **`Gold_XAU_USD_Historical_Data.xlsx`** | **Ready-to-use Excel sheet** featuring 2-year XAU/USD historical futures, EMAs, trend signals, and GoldAPI spot prices! |
+| 📈 **`strategies.py`** | Moving Average Crossover (`SmaCross`) and RSI momentum strategies. |
+| ⚡ **`run_backtest.py`** | Executes backtests, computes profit factor, Sharpe ratio, win rate, and max drawdown. |
+
+---
+
+## 🚀 Quick Start Guide (For Traders & Learners)
 
 ### Step 1: Install Python
-If you don't have Python installed, download and install it from [python.org](https://www.python.org/). Make sure to check **"Add Python to PATH"** during installation.
+Ensure Python 3.9+ is installed.
 
-### Step 2: Download or Clone this Repository
-Download this folder or clone it using Git:
-```bash
-git clone https://github.com/your-username/gold-trading-toolkit.git
-cd gold-trading-toolkit
-```
-
-### Step 3: Install Required Libraries
-Open your terminal (Command Prompt, PowerShell, or Terminal) inside the folder and run:
+### Step 2: Install Required Libraries
 ```bash
 pip install -r requirements.txt
 ```
 
-### Step 4: Download Gold Market Data
-Run the data downloader script to fetch live and historical Gold prices (`GC=F`):
+### Step 3: Download Fresh Gold Market Data
 ```bash
 python data_fetcher.py
 ```
-*This will create a `gold_data/` folder containing CSV files with historical prices.*
 
-### Step 5: Run Your First Backtest!
-Test how the Moving Average Crossover strategy performs on daily gold data:
+### Step 4: Run the Algorithmic Backtest
 ```bash
 python run_backtest.py
 ```
-You will see a detailed performance report printed in your terminal!
 
 ---
 
-## 🌐 How to Upload to GitHub (Step-by-Step)
-1. Create a new repository on [GitHub.com](https://github.com).
-2. Open your terminal in the project folder and run:
-```bash
-git init
-git add .
-git commit -m "Initial commit: Gold Trading & Backtesting Toolkit"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
-git push -u origin main
-```
-3. Done! Your project is now live on GitHub for the world to see! 🚀
+## 🔗 Monetry Ecosystem & Free Tools
+
+- 📊 **[Monetry.in](https://monetry.in)** — Free live F&O dashboard (option chain, OI heatmap, EMA signals, Gann levels, VIX range).
+- 🔱 **[MahadevLevels35 PRO](https://github.com/phadmahadev-ops/mahadev-levels-pro)** — Free TradingView Pine Script v6 indicator.
+- 📣 **[Telegram: @peoplesin](https://t.me/peoplesin)** — Live updates, signals & community.
 
 ---
-Made with ❤️ for traders, learners, and students.
+
+## ⚠️ Disclaimer
+**Educational and research use only.** Not investment advice or SEBI-registered recommendation. Trading financial derivatives (F&O / Spot Gold) carries substantial risk of loss. Use at your own risk.
+
+<p align="center">Made with 🔱 by <a href="https://monetry.in">Monetry.in</a></p>
